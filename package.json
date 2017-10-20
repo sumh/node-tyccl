@@ -1,6 +1,6 @@
 {
   "name": "node-tyccl",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Chinese synonym dictionary",
   "main": "index.js",
   "scripts": {
