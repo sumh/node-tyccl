@@ -36,9 +36,9 @@ console.log(sim);//0.6181867355918498
 默认使用的同义词词林的词典位于`./dict/cilin.txt`，可以替换新词典文件，更新方式如下
 
 ```js
-let tyccl = require('node-tyccl')
+const tyccl = require('node-tyccl')
 
-tyccl.updateDict('./newcilin.txt')
+tyccl.updateDict('./new-cilin.txt')
 
 // 创建 词-编码 字典成功
 // 创建 编码树 字典成功
