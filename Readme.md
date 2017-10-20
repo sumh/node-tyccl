@@ -12,7 +12,7 @@ npm install node-tyccl
 `getSynonym(word)`获取一个词的同义词，词典中未记录的词或无同义词的词返回空数组
 
 ```js
-const tyccl = require('./node-tyccl');
+const tyccl = require('node-tyccl');
 
 let sim = tyccl.getSynonym('日记');
 
@@ -23,7 +23,7 @@ console.log(sim);//[ '日志' ]
 `getSimilarity(word1,word2)`计算两个词之间的相似度
 
 ```js
-const tyccl = require('./node-tyccl');
+const tyccl = require('node-tyccl');
 
 let sim = tyccl.getSimilarity('太阳','花朵');
 
@@ -35,7 +35,7 @@ console.log(sim);//0.6181867355918498
 使用的同义词词林的词典位于`./dict/cilin.txt`，可以替换新词典文件，更新方式如下
 
 ```js
-const createDict = require('./node-tyccl/create-dict');
+const createDict = require('node-tyccl/create-dict');
 
 createDict()
 
