@@ -1,0 +1,19 @@
+{
+  "name": "node-tyccl",
+  "version": "0.1.0",
+  "description": "Chinese synonym dictionary",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sumh/node-tyccl.git"
+  },
+  "author": "SumH(sumh1985@gmail.com)",
+  "license": "MIT",
+  "dependencies": {
+    "jsonfile": "^2.4.0",
+    "lodash": "^4.17.4"
+  }
+}
