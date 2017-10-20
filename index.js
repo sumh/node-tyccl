@@ -2,7 +2,7 @@
 * @Author: SumH
 * @Date:   2017-07-05 19:56:18
 * @Last Modified by:   SumH
-* @Last Modified time: 2017-10-20 21:34:25
+* @Last Modified time: 2017-10-20 22:54:00
 */
 //引入依赖库
 const _ = require('lodash');
@@ -162,6 +162,13 @@ exports.getSynonym = function(word,number=10){
 
 };
 
-// 创建词典
-exports.createDict = createDict;
+// 更新词典
+exports.updateDict = function(file){
+
+  //获取文件执行路径
+  let filePath = path.join(process.cwd(),file)
+
+  // 创建词典
+  createDict(filePath)
+}
 

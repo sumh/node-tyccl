@@ -4,12 +4,8 @@ const _ = require('lodash');
 const jsonfile = require('jsonfile');
 const path = require('path');
 
-//读取词典文件
-let rawData = fs.readFileSync(path.join(__dirname,'/dict/cilin.txt'), 'utf-8');
-
-//构建同义词数组
-let synonymArray = rawData.split('\n');
-
+// 默认字典路径
+let defaultPath = path.join(__dirname,'/dict/cilin.txt');
 
 //创建“编码-词”字典
 let createEncodeWords = function(synonymArray){
@@ -123,7 +119,14 @@ let createEncodeTree = function(encodeWords){
 };
 
 // 创建字典
-let createDict = function(){
+let createDict = function(file=defaultPath){
+
+    //读取词典文件
+  let rawData = fs.readFileSync(file, 'utf-8');
+
+  //构建同义词数组
+  let synonymArray = rawData.split('\n');
+
 
   let encodeWords = createEncodeWords(synonymArray);
   let wordsEncode = createWrodsEncode(synonymArray);
