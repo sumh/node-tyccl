@@ -166,9 +166,9 @@ exports.getSynonym = function(word,number=10){
 exports.updateDict = function(file){
 
   //获取文件执行路径
-  let filePath = path.join(process.cwd(),file)
+  let filePath = path.join(process.cwd(),file);
 
   // 创建词典
-  createDict(filePath)
-}
+  createDict(filePath);
+};
 
